@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prediction Result</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: #f9f9f9;
+}
+header {
+background-color: #333;
+color: white;
+padding: 15px;
+text-align: center;
+}
+.content {
+padding: 20px;
+text-align: center;
+background-color: #d4d7a3;
+}
+.btn {
+display: inline-block;
+padding: 10px 20px;
+color: white;
+background-color: #5cb85c;
+text-decoration: none;
+border-radius: 5px;
+}
+.btn:hover {
+background-color: #4cae4c;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Prediction Result</h1>
+</header>
+<div class="content">
+<h2>Precaution for the Disease:</h2>
+<p>{{ precaution }}</p>
+<br><br>
+<a href="/" class="btn">Back to Home</a>
+<a href="/predict" class="btn">Predict Another</a>
+</div>
+</body>
+</html>

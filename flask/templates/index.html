@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plant Disease Prediction</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f9f9f9;
+}
+header {
+background-color: #333;
+color: white;
+padding: 15px;
+font-size: 24px;
+text-align: center;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+header a {
+color: white;
+text-decoration: none;
+padding: 10px 20px;
+background-color: #444;
+border-radius: 5px;
+}
+header a:hover {
+background-color: #555;
+}
+.content {
+padding: 20px;
+text-align: center;
+background-color: #d4d7a3;
+color: #333;
+height: 400px;
+}
+.content img {
+width: 300px;
+height: auto;
+border-radius: 10%;
+float: right;
+margin: 20px;
+}
+.content h1 {
+font-size: 36px;
+margin-top: 20px;
+}
+.content p {
+font-size: 18px;
+line-height: 1.6;
+margin-top: 10px;
+}
+.btn {
+display: inline-block;
+padding: 10px 20px;
+margin-top: 20px;
+color: white;
+background-color: #5cb85c;
+text-decoration: none;
+border-radius: 5px;
+margin-left: 20%;
+}
+.btn:hover {
+background-color: #4cae4c;
+}
+</style>
+</head>
+<body>
+<header>
+<div>Plant Disease Prediction</div>
+<div>
+<a href="/">Home</a>
+<a href="/predict">Predict</a>
+</div>
+</header>
+<div class="content">
+<h1>Detect if your plant is infected!!</h1>
+<p>
+Agriculture is one of the major sectors worldwide. Over the years, it has developed, and the use
+of new technologies and equipment replaced almost all traditional farming methods.
+This application helps farmers detect diseases by observing spots on leaves, which saves effort
+and labor costs.
+</p>
+<img src="{{ url_for('static', filename='img/plant_image.jpg') }}" alt="Plant Image">
+<a href="/predict" class="btn">Predict Now</a>
+</div>
+</body>
+</html>
